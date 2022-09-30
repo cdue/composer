@@ -1,2 +1,2 @@
 # composer-soap
-Simple and light Docker image base on composer/composer (alpine) and containing soap extension
+Docker image base on composer/composer (alpine) and containing soap and xdebug extensions
