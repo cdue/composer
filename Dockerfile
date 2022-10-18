@@ -1,10 +1,19 @@
 FROM php:7.3.33-alpine3.14
 
 RUN set -eux \
-  && apk add --no-cache --update --virtual buildDeps build-base autoconf curl
+  && apk add --no-cache --update \
+  bash \
+  libxml2-dev \
+  tini \
+  unzip \
+  zip \
+  openssh-client
 
 RUN set -eux \
-  && apk add --no-cache --update libxml2-dev tini
+  && apk add --no-cache --update --virtual buildDeps \
+  build-base \
+  autoconf \
+  curl
 
 RUN printf "# composer php cli ini settings\n\
 date.timezone=UTC\n\
