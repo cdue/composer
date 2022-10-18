@@ -1,5 +1,6 @@
-# composer-soap
-Docker image base on composer/composer (alpine) and containing soap and xdebug extensions
+# composer
+Docker image base on composer/composer (alpine) and containing soap and xdebug extensions.
+This images includes composer 2.0.7 and PHP 7.4. If you need to use older PHP version, you may want to check the `2.0.7-php7.3` branch.
 
 ## Build Docker image
 
